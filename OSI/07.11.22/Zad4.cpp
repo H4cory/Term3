@@ -19,8 +19,8 @@ using namespace std;
 int main()
 {
     string input1, input2;
-    int sp = 0, rw = 0;
-    bool gate = true;
+    int space = 0, rows = 0;
+    bool match = true;
 
     cout << "\nInput I: ";
     getline(cin, input1);
@@ -31,35 +31,35 @@ int main()
     {
 
         cout << endl;
-        for (int i = 0; i < input2.length() && gate; i++)
+        for (int i = 0; i < input2.length() && match; i++)
         {
-            for (int j = 0; j < input1.length() && gate; j++)
+            for (int j = 0; j < input1.length() && match; j++)
             {
                 if (input2[i] == input1[j])
                 {
-                    sp = j;
-                    rw = i;
-                    gate = false;
+                    space = j;
+                    rows = i;
+                    match = false;
                 }
             }
         }
 
-        if (gate)
+        if (match)
         {
             cout << input1 << endl;
-            sp = input1.length();
+            space = input1.length();
         }
-        for (int i = 0; i < input2.size(); i++)
+        for (int i = 0; i < input2.length(); i++)
         {
 
-            if (i == rw && !gate)
+            if (i == rows && !match)
             {
                 cout << input1;
             }
             else
 
             {
-                for (int j = 0; j < sp; j++)
+                for (int j = 0; j < space; j++)
                 {
                     cout << ' ';
                 }
@@ -68,9 +68,7 @@ int main()
             cout << endl;
         }
 
-        sp = 0;
-        rw = 0;
-        gate = true;
+       
     }
     else
         cout << "\nWords are too long!\n";

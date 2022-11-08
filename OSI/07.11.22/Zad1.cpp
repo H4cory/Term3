@@ -17,7 +17,7 @@ using namespace std;
 
 int main()
 {
-   int temp, n;
+   int temp;
    int a[3];
 
    cout << "A: B: C:" << endl;

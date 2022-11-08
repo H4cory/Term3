@@ -14,8 +14,7 @@ using namespace std;
 int main()
 {
    string input;
-   int wdCount = 1, chCount[10] = {0}, max = -1;
-   int sum = 0;
+   int wdCount = 1, chCount[10] = {0}, max = -1, sum = 0;
 
    cout << "Input: ";
    getline(cin, input);

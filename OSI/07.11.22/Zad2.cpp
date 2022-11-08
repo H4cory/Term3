@@ -11,7 +11,7 @@ using namespace std;
 
 int main()
 {
-    int A[50], n, temp, j = 0, avg = 0;
+    int A[50], n, temp, count = 0, avg = 0;
     float a[50];
 
     cout << "Number count: ";
@@ -29,17 +29,16 @@ int main()
             if ((temp % 10) % 2 == 1)
             {
                 avg += temp % 10;
-                j++;
+                count++;
             }
             temp = temp / 10;
         }
 
-        a[i] = avg / j;
-        j = 0;
+        a[i] = avg / count;
+        count = 0;
         avg = 0;
     }
-    cout << endl
-         << "Anwser: " << endl;
+    cout << endl << "Anwser: " << endl;
     for (int i = 0; i < n; i++)
     {
         cout << "a[" << i + 1 << "]: " << a[i] << endl;
