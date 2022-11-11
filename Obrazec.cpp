@@ -1,5 +1,17 @@
 /*
 
+
+
+--Opisanie
+
+
+--Promenlivi
+
+
+--Footer
+
+Autor: KK
+Date :                            Last Modified:
 */
 #include <iostream>
 #include <string>

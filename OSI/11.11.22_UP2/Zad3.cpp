@@ -10,7 +10,18 @@ Da se sastavi algoritam i napishe programa, koyato vavezhda v maisv danni za opr
 produkti i izchislyava nalichnata stoka v parichno izrazhenie.
 
 
+--Opisanie
+    Programata celi da 
+
+--Promenlivi
+
+
+--Footer
+
+Autor: KK
+Date :                            Last Modified:
 */
+
 #include <iostream>
 #include <string>
 
