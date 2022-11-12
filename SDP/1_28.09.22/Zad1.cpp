@@ -1,8 +1,8 @@
 /*
-РУ има к факултета и п компютърни зали. 
-За всяка зала е известен броя на компютрите и на
-кой факултет принадлежи.
-Да се изведе броя на компютрите за всеки факултет.
+RU ima k fakulteta i p kompyutarni zali. 
+Za vsyaka zala e izvesten broya na kompyutrite i na
+koy fakultet prinadlezhi.
+Da se izvede broya na kompyutrite za vseki fakultet.
 
 */
 #include <iostream>
