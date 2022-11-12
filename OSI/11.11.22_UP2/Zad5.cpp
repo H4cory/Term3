@@ -5,7 +5,18 @@ klaviaturata nyakolko dumi, napisani na edin red i razdeleni s edin interval. Sl
 tova programata namira i izvezhda nay-dalgata duma ot vavedenite. Ako ima nyakolko
 nay-dalgi dumi, izvezhda gi vsichkite.
 
+--Opisanie
+
+
+--Promenlivi
+
+
+--Footer
+
+Autor: KK
+Date :                            Last Modified:
 */
+
 #include <iostream>
 #include <string>
 
