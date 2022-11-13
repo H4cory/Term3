@@ -1,5 +1,5 @@
 /*
-
+--Specifikaciq
 
 
 --Opisanie
