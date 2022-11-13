@@ -47,7 +47,16 @@ int main()
       }
       else
       {
-         inputList.push_back(stoi(input));
+         try
+         {
+            inputList.push_back(stoi(input));
+         }
+         catch (exception &e)
+         {
+            cout << "> Error converting" << '\n';
+            i--;
+         }
+         
       }
    }
 
@@ -67,7 +76,7 @@ int main()
       outputList.pop_front();
       cout << ' ';
    }
-   cout << "}";
+   cout << "}"<<endl;
 
    return 0;
 }
