@@ -18,22 +18,19 @@ se chisla.
 --Footer
 
 Autor: KK
-Date : 12.11.22                           Last Modified: 12.11.22
+Date : 12.11.22                           Last Modified: 14.11.22
 */
 #include <iostream>
 #include <string>
 #include <list>
-#include <algorithm>
 
 using namespace std;
 
-int main()
+// Funciq za wywejdane na danni wyw whodqshtiqt list
+void getData(list<int> &inputList)
 {
-
-   list<int> inputList, outputList;
    string input;
 
-   // Wywejdat se chislata po edno na red
    cout << "\nInput numbers: \n"
         << "Input s to stop\n";
    for (int i = 0; true; i++)
@@ -56,9 +53,32 @@ int main()
             cout << "> Error converting" << '\n';
             i--;
          }
-         
       }
    }
+}
+
+// Funciq za izwejdane na ekrana dannite ot izhodqsht list
+void displayData(list<int> &outputList)
+{
+   cout << "\nOutput: { ";
+
+   for (list<int>::iterator it = outputList.begin(); it != outputList.end(); it++)
+   {
+
+      cout << *it;
+      cout << ' ';
+   }
+
+   cout << "}" << endl;
+}
+
+int main()
+{
+
+   list<int> inputList, outputList;
+
+   // Wywejdat se chislata po edno na red
+   getData(inputList);
 
    // Spisykyt se sortira i se premahwat endakwite chisla
    inputList.sort();
@@ -68,15 +88,7 @@ int main()
    inputList.swap(outputList);
 
    // Izhodniqt spisyk se izwejda na ekrana
-   cout << "\nOutput: { ";
-   for (int i = 0; !outputList.empty(); i++)
-   {
-
-      cout << outputList.front();
-      outputList.pop_front();
-      cout << ' ';
-   }
-   cout << "}"<<endl;
+   displayData(outputList);
 
    return 0;
 }
